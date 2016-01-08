@@ -1,0 +1,498 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE381A8A15051DC7000A8D67 /* RCStatusItem.png in Resources */ = {isa = PBXBuildFile; fileRef = BE381A8815051DC7000A8D67 /* RCStatusItem.png */; };
+		BE381A8B15051DC7000A8D67 /* RCStatusItemAlt.png in Resources */ = {isa = PBXBuildFile; fileRef = BE381A8915051DC7000A8D67 /* RCStatusItemAlt.png */; };
+		BE381A8E15052111000A8D67 /* RCStatusItemEnabled.png in Resources */ = {isa = PBXBuildFile; fileRef = BE381A8D15052111000A8D67 /* RCStatusItemEnabled.png */; };
+		BE381A9015052502000A8D67 /* Replicapp.icns in Resources */ = {isa = PBXBuildFile; fileRef = BE381A8F15052502000A8D67 /* Replicapp.icns */; };
+		BE85D27613F9A547000543C5 /* DDHotKeyCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE85D27513F9A547000543C5 /* DDHotKeyCenter.m */; };
+		BE85D27913F9A7F7000543C5 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE85D27813F9A7F7000543C5 /* Carbon.framework */; };
+		BE85D27B13F9C76A000543C5 /* ReplicappWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE85D27A13F9C76A000543C5 /* ReplicappWindow.xib */; };
+		BE85D27F13F9C7E5000543C5 /* ReplicappWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE85D27D13F9C7E5000543C5 /* ReplicappWindowController.m */; };
+		BEAE3F2614029CE8001A2961 /* Quartz.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEAE3F2514029CE8001A2961 /* Quartz.framework */; };
+		BEAE3F4B1405490B001A2961 /* INPopoverController.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAE3F431405490B001A2961 /* INPopoverController.m */; };
+		BEAE3F4C1405490B001A2961 /* INPopoverWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAE3F461405490B001A2961 /* INPopoverWindow.m */; };
+		BEAE3F4D1405490B001A2961 /* INPopoverWindowFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAE3F481405490B001A2961 /* INPopoverWindowFrame.m */; };
+		BEAE3F4E1405490B001A2961 /* INAlwaysKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BEAE3F4A1405490B001A2961 /* INAlwaysKeyWindow.m */; };
+		BEB9947B140DD29C0060560D /* RCAnchor.png in Resources */ = {isa = PBXBuildFile; fileRef = BEB99479140DD29C0060560D /* RCAnchor.png */; };
+		BEB9947C140DD29C0060560D /* RCAnchorAlternate.png in Resources */ = {isa = PBXBuildFile; fileRef = BEB9947A140DD29C0060560D /* RCAnchorAlternate.png */; };
+		BEB9947F140DD3AB0060560D /* RCSettingsAlternate.png in Resources */ = {isa = PBXBuildFile; fileRef = BEB9947D140DD3AB0060560D /* RCSettingsAlternate.png */; };
+		BEB99480140DD3AB0060560D /* RCSettings.png in Resources */ = {isa = PBXBuildFile; fileRef = BEB9947E140DD3AB0060560D /* RCSettings.png */; };
+		BEB994C7140EE31D0060560D /* RSVerticallyCenteredTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BEB994C6140EE31D0060560D /* RSVerticallyCenteredTextFieldCell.m */; };
+		BEDD6A51140FD1F10068A203 /* RCResizeDownRightCursor.tiff in Resources */ = {isa = PBXBuildFile; fileRef = BEDD6A50140FD1F10068A203 /* RCResizeDownRightCursor.tiff */; };
+		BEDD6A5C140FF6320068A203 /* RCDiagonalBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDD6A5B140FF6320068A203 /* RCDiagonalBackground.png */; };
+		BEDD6A5E140FF6B90068A203 /* RCWhiteyBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = BEDD6A5D140FF6B90068A203 /* RCWhiteyBackground.png */; };
+		BEE7264113E0A1E000BBB2F1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEE7264013E0A1E000BBB2F1 /* Cocoa.framework */; };
+		BEE7264B13E0A1E000BBB2F1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BEE7264913E0A1E000BBB2F1 /* InfoPlist.strings */; };
+		BEE7264E13E0A1E000BBB2F1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE7264D13E0A1E000BBB2F1 /* main.m */; };
+		BEE7265113E0A1E000BBB2F1 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = BEE7264F13E0A1E000BBB2F1 /* Credits.rtf */; };
+		BEE7265413E0A1E000BBB2F1 /* ReplicappAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE7265313E0A1E000BBB2F1 /* ReplicappAppDelegate.m */; };
+		BEE7265713E0A1E000BBB2F1 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEE7265513E0A1E000BBB2F1 /* MainMenu.xib */; };
+		BEE7265F13E0AC0C00BBB2F1 /* RCHighlightWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE7265E13E0AC0C00BBB2F1 /* RCHighlightWindow.m */; };
+		BEE7266213E0AD0F00BBB2F1 /* RCHighlightView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE7266113E0AD0F00BBB2F1 /* RCHighlightView.m */; };
+		BEE7266513E0B66A00BBB2F1 /* RCCursorView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE7266413E0B66A00BBB2F1 /* RCCursorView.m */; };
+		BEFB2B2613FC53E3007613E2 /* RCImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEFB2B2513FC53E3007613E2 /* RCImageView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BEB994A8140ECE1D0060560D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		BE1E239315C19A7B00EC7A7C /* Replicapp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = Replicapp.entitlements; sourceTree = "<group>"; };
+		BE381A8815051DC7000A8D67 /* RCStatusItem.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RCStatusItem.png; sourceTree = "<group>"; };
+		BE381A8915051DC7000A8D67 /* RCStatusItemAlt.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RCStatusItemAlt.png; sourceTree = "<group>"; };
+		BE381A8D15052111000A8D67 /* RCStatusItemEnabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RCStatusItemEnabled.png; sourceTree = "<group>"; };
+		BE381A8F15052502000A8D67 /* Replicapp.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Replicapp.icns; sourceTree = "<group>"; };
+		BE85D27413F9A547000543C5 /* DDHotKeyCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDHotKeyCenter.h; sourceTree = "<group>"; };
+		BE85D27513F9A547000543C5 /* DDHotKeyCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDHotKeyCenter.m; sourceTree = "<group>"; };
+		BE85D27813F9A7F7000543C5 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		BE85D27A13F9C76A000543C5 /* ReplicappWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReplicappWindow.xib; sourceTree = "<group>"; };
+		BE85D27C13F9C7E5000543C5 /* ReplicappWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReplicappWindowController.h; sourceTree = "<group>"; };
+		BE85D27D13F9C7E5000543C5 /* ReplicappWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReplicappWindowController.m; sourceTree = "<group>"; };
+		BEAE3F2514029CE8001A2961 /* Quartz.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quartz.framework; path = System/Library/Frameworks/Quartz.framework; sourceTree = SDKROOT; };
+		BEAE3F421405490B001A2961 /* INPopoverController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INPopoverController.h; sourceTree = "<group>"; };
+		BEAE3F431405490B001A2961 /* INPopoverController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INPopoverController.m; sourceTree = "<group>"; };
+		BEAE3F441405490B001A2961 /* INPopoverControllerDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INPopoverControllerDefines.h; sourceTree = "<group>"; };
+		BEAE3F451405490B001A2961 /* INPopoverWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INPopoverWindow.h; sourceTree = "<group>"; };
+		BEAE3F461405490B001A2961 /* INPopoverWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INPopoverWindow.m; sourceTree = "<group>"; };
+		BEAE3F471405490B001A2961 /* INPopoverWindowFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INPopoverWindowFrame.h; sourceTree = "<group>"; };
+		BEAE3F481405490B001A2961 /* INPopoverWindowFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INPopoverWindowFrame.m; sourceTree = "<group>"; };
+		BEAE3F491405490B001A2961 /* INAlwaysKeyWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INAlwaysKeyWindow.h; sourceTree = "<group>"; };
+		BEAE3F4A1405490B001A2961 /* INAlwaysKeyWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INAlwaysKeyWindow.m; sourceTree = "<group>"; };
+		BEB99479140DD29C0060560D /* RCAnchor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RCAnchor.png; sourceTree = "<group>"; };
+		BEB9947A140DD29C0060560D /* RCAnchorAlternate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RCAnchorAlternate.png; sourceTree = "<group>"; };
+		BEB9947D140DD3AB0060560D /* RCSettingsAlternate.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RCSettingsAlternate.png; sourceTree = "<group>"; };
+		BEB9947E140DD3AB0060560D /* RCSettings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RCSettings.png; sourceTree = "<group>"; };
+		BEB994C5140EE31D0060560D /* RSVerticallyCenteredTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSVerticallyCenteredTextFieldCell.h; sourceTree = "<group>"; };
+		BEB994C6140EE31D0060560D /* RSVerticallyCenteredTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSVerticallyCenteredTextFieldCell.m; sourceTree = "<group>"; };
+		BEDD6A50140FD1F10068A203 /* RCResizeDownRightCursor.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = RCResizeDownRightCursor.tiff; sourceTree = "<group>"; };
+		BEDD6A5B140FF6320068A203 /* RCDiagonalBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RCDiagonalBackground.png; sourceTree = "<group>"; };
+		BEDD6A5D140FF6B90068A203 /* RCWhiteyBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RCWhiteyBackground.png; sourceTree = "<group>"; };
+		BEE7263C13E0A1E000BBB2F1 /* Replicapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Replicapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEE7264013E0A1E000BBB2F1 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		BEE7264313E0A1E000BBB2F1 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		BEE7264413E0A1E000BBB2F1 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		BEE7264513E0A1E000BBB2F1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BEE7264813E0A1E000BBB2F1 /* Replicapp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Replicapp-Info.plist"; sourceTree = "<group>"; };
+		BEE7264A13E0A1E000BBB2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BEE7264C13E0A1E000BBB2F1 /* Replicapp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Replicapp-Prefix.pch"; sourceTree = "<group>"; };
+		BEE7264D13E0A1E000BBB2F1 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEE7265013E0A1E000BBB2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		BEE7265213E0A1E000BBB2F1 /* ReplicappAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReplicappAppDelegate.h; sourceTree = "<group>"; };
+		BEE7265313E0A1E000BBB2F1 /* ReplicappAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReplicappAppDelegate.m; sourceTree = "<group>"; };
+		BEE7265613E0A1E000BBB2F1 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BEE7265D13E0AC0C00BBB2F1 /* RCHighlightWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCHighlightWindow.h; sourceTree = "<group>"; };
+		BEE7265E13E0AC0C00BBB2F1 /* RCHighlightWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCHighlightWindow.m; sourceTree = "<group>"; };
+		BEE7266013E0AD0F00BBB2F1 /* RCHighlightView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCHighlightView.h; sourceTree = "<group>"; };
+		BEE7266113E0AD0F00BBB2F1 /* RCHighlightView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCHighlightView.m; sourceTree = "<group>"; };
+		BEE7266313E0B66900BBB2F1 /* RCCursorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCCursorView.h; sourceTree = "<group>"; };
+		BEE7266413E0B66A00BBB2F1 /* RCCursorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCCursorView.m; sourceTree = "<group>"; };
+		BEFB2B2413FC53E3007613E2 /* RCImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCImageView.h; sourceTree = "<group>"; };
+		BEFB2B2513FC53E3007613E2 /* RCImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCImageView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BEE7263913E0A1E000BBB2F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEAE3F2614029CE8001A2961 /* Quartz.framework in Frameworks */,
+				BE85D27913F9A7F7000543C5 /* Carbon.framework in Frameworks */,
+				BEE7264113E0A1E000BBB2F1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BEAE3F41140548F6001A2961 /* INPopoverController */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE3F421405490B001A2961 /* INPopoverController.h */,
+				BEAE3F431405490B001A2961 /* INPopoverController.m */,
+				BEAE3F441405490B001A2961 /* INPopoverControllerDefines.h */,
+				BEAE3F451405490B001A2961 /* INPopoverWindow.h */,
+				BEAE3F461405490B001A2961 /* INPopoverWindow.m */,
+				BEAE3F471405490B001A2961 /* INPopoverWindowFrame.h */,
+				BEAE3F481405490B001A2961 /* INPopoverWindowFrame.m */,
+				BEAE3F491405490B001A2961 /* INAlwaysKeyWindow.h */,
+				BEAE3F4A1405490B001A2961 /* INAlwaysKeyWindow.m */,
+			);
+			name = INPopoverController;
+			sourceTree = "<group>";
+		};
+		BEB994C4140EDD8B0060560D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				BE381A8D15052111000A8D67 /* RCStatusItemEnabled.png */,
+				BE381A8815051DC7000A8D67 /* RCStatusItem.png */,
+				BE381A8915051DC7000A8D67 /* RCStatusItemAlt.png */,
+				BEDD6A5B140FF6320068A203 /* RCDiagonalBackground.png */,
+				BEDD6A5D140FF6B90068A203 /* RCWhiteyBackground.png */,
+				BEDD6A50140FD1F10068A203 /* RCResizeDownRightCursor.tiff */,
+				BEB99479140DD29C0060560D /* RCAnchor.png */,
+				BEB9947A140DD29C0060560D /* RCAnchorAlternate.png */,
+				BEB9947E140DD3AB0060560D /* RCSettings.png */,
+				BEB9947D140DD3AB0060560D /* RCSettingsAlternate.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		BEE7263113E0A1E000BBB2F1 = {
+			isa = PBXGroup;
+			children = (
+				BEE7264613E0A1E000BBB2F1 /* Replicapp */,
+				BEE7263F13E0A1E000BBB2F1 /* Frameworks */,
+				BEE7263D13E0A1E000BBB2F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BEE7263D13E0A1E000BBB2F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEE7263C13E0A1E000BBB2F1 /* Replicapp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BEE7263F13E0A1E000BBB2F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEE7264313E0A1E000BBB2F1 /* AppKit.framework */,
+				BEE7264413E0A1E000BBB2F1 /* CoreData.framework */,
+				BEE7264513E0A1E000BBB2F1 /* Foundation.framework */,
+				BEAE3F2514029CE8001A2961 /* Quartz.framework */,
+				BE85D27813F9A7F7000543C5 /* Carbon.framework */,
+				BEE7264013E0A1E000BBB2F1 /* Cocoa.framework */,
+				BEE7264213E0A1E000BBB2F1 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BEE7264213E0A1E000BBB2F1 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		BEE7264613E0A1E000BBB2F1 /* Replicapp */ = {
+			isa = PBXGroup;
+			children = (
+				BEAE3F41140548F6001A2961 /* INPopoverController */,
+				BEE7265513E0A1E000BBB2F1 /* MainMenu.xib */,
+				BEE7265213E0A1E000BBB2F1 /* ReplicappAppDelegate.h */,
+				BEE7265313E0A1E000BBB2F1 /* ReplicappAppDelegate.m */,
+				BEE7265D13E0AC0C00BBB2F1 /* RCHighlightWindow.h */,
+				BEE7265E13E0AC0C00BBB2F1 /* RCHighlightWindow.m */,
+				BEE7266013E0AD0F00BBB2F1 /* RCHighlightView.h */,
+				BEE7266113E0AD0F00BBB2F1 /* RCHighlightView.m */,
+				BEE7266313E0B66900BBB2F1 /* RCCursorView.h */,
+				BEE7266413E0B66A00BBB2F1 /* RCCursorView.m */,
+				BE85D27413F9A547000543C5 /* DDHotKeyCenter.h */,
+				BE85D27513F9A547000543C5 /* DDHotKeyCenter.m */,
+				BE85D27A13F9C76A000543C5 /* ReplicappWindow.xib */,
+				BE85D27C13F9C7E5000543C5 /* ReplicappWindowController.h */,
+				BE85D27D13F9C7E5000543C5 /* ReplicappWindowController.m */,
+				BEFB2B2413FC53E3007613E2 /* RCImageView.h */,
+				BEFB2B2513FC53E3007613E2 /* RCImageView.m */,
+				BEB994C5140EE31D0060560D /* RSVerticallyCenteredTextFieldCell.h */,
+				BEB994C6140EE31D0060560D /* RSVerticallyCenteredTextFieldCell.m */,
+				BEE7264713E0A1E000BBB2F1 /* Supporting Files */,
+			);
+			path = Replicapp;
+			sourceTree = "<group>";
+		};
+		BEE7264713E0A1E000BBB2F1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEB994C4140EDD8B0060560D /* Images */,
+				BEE7264813E0A1E000BBB2F1 /* Replicapp-Info.plist */,
+				BE1E239315C19A7B00EC7A7C /* Replicapp.entitlements */,
+				BEE7264913E0A1E000BBB2F1 /* InfoPlist.strings */,
+				BE381A8F15052502000A8D67 /* Replicapp.icns */,
+				BEE7264C13E0A1E000BBB2F1 /* Replicapp-Prefix.pch */,
+				BEE7264D13E0A1E000BBB2F1 /* main.m */,
+				BEE7264F13E0A1E000BBB2F1 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BEE7263B13E0A1E000BBB2F1 /* Replicapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEE7265A13E0A1E000BBB2F1 /* Build configuration list for PBXNativeTarget "Replicapp" */;
+			buildPhases = (
+				BEE7263813E0A1E000BBB2F1 /* Sources */,
+				BEE7263913E0A1E000BBB2F1 /* Frameworks */,
+				BEB994A8140ECE1D0060560D /* CopyFiles */,
+				BEE7263A13E0A1E000BBB2F1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Replicapp;
+			productName = Replicapp;
+			productReference = BEE7263C13E0A1E000BBB2F1 /* Replicapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BEE7263313E0A1E000BBB2F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				TargetAttributes = {
+					BEE7263B13E0A1E000BBB2F1 = {
+						DevelopmentTeam = 3L5SA3L5UU;
+					};
+				};
+			};
+			buildConfigurationList = BEE7263613E0A1E000BBB2F1 /* Build configuration list for PBXProject "Replicapp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BEE7263113E0A1E000BBB2F1;
+			productRefGroup = BEE7263D13E0A1E000BBB2F1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BEE7263B13E0A1E000BBB2F1 /* Replicapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BEE7263A13E0A1E000BBB2F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE7264B13E0A1E000BBB2F1 /* InfoPlist.strings in Resources */,
+				BEE7265113E0A1E000BBB2F1 /* Credits.rtf in Resources */,
+				BEE7265713E0A1E000BBB2F1 /* MainMenu.xib in Resources */,
+				BE85D27B13F9C76A000543C5 /* ReplicappWindow.xib in Resources */,
+				BEB9947B140DD29C0060560D /* RCAnchor.png in Resources */,
+				BEB9947C140DD29C0060560D /* RCAnchorAlternate.png in Resources */,
+				BEB9947F140DD3AB0060560D /* RCSettingsAlternate.png in Resources */,
+				BEB99480140DD3AB0060560D /* RCSettings.png in Resources */,
+				BEDD6A51140FD1F10068A203 /* RCResizeDownRightCursor.tiff in Resources */,
+				BEDD6A5C140FF6320068A203 /* RCDiagonalBackground.png in Resources */,
+				BEDD6A5E140FF6B90068A203 /* RCWhiteyBackground.png in Resources */,
+				BE381A8A15051DC7000A8D67 /* RCStatusItem.png in Resources */,
+				BE381A8B15051DC7000A8D67 /* RCStatusItemAlt.png in Resources */,
+				BE381A8E15052111000A8D67 /* RCStatusItemEnabled.png in Resources */,
+				BE381A9015052502000A8D67 /* Replicapp.icns in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BEE7263813E0A1E000BBB2F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEE7264E13E0A1E000BBB2F1 /* main.m in Sources */,
+				BEE7265413E0A1E000BBB2F1 /* ReplicappAppDelegate.m in Sources */,
+				BEE7265F13E0AC0C00BBB2F1 /* RCHighlightWindow.m in Sources */,
+				BEE7266213E0AD0F00BBB2F1 /* RCHighlightView.m in Sources */,
+				BEE7266513E0B66A00BBB2F1 /* RCCursorView.m in Sources */,
+				BE85D27613F9A547000543C5 /* DDHotKeyCenter.m in Sources */,
+				BE85D27F13F9C7E5000543C5 /* ReplicappWindowController.m in Sources */,
+				BEFB2B2613FC53E3007613E2 /* RCImageView.m in Sources */,
+				BEAE3F4B1405490B001A2961 /* INPopoverController.m in Sources */,
+				BEAE3F4C1405490B001A2961 /* INPopoverWindow.m in Sources */,
+				BEAE3F4D1405490B001A2961 /* INPopoverWindowFrame.m in Sources */,
+				BEAE3F4E1405490B001A2961 /* INAlwaysKeyWindow.m in Sources */,
+				BEB994C7140EE31D0060560D /* RSVerticallyCenteredTextFieldCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BEE7264913E0A1E000BBB2F1 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEE7264A13E0A1E000BBB2F1 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BEE7264F13E0A1E000BBB2F1 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEE7265013E0A1E000BBB2F1 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		BEE7265513E0A1E000BBB2F1 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEE7265613E0A1E000BBB2F1 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BEE7265813E0A1E000BBB2F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		BEE7265913E0A1E000BBB2F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PROVISIONING_PROFILE = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		BEE7265B13E0A1E000BBB2F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Replicapp/Replicapp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Applications\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Replicapp/Replicapp-Prefix.pch";
+				INFOPLIST_FILE = "Replicapp/Replicapp-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexwinston.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BEE7265C13E0A1E000BBB2F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_ENTITLEMENTS = Replicapp/Replicapp.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Applications\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Replicapp/Replicapp-Prefix.pch";
+				INFOPLIST_FILE = "Replicapp/Replicapp-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alexwinston.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BEE7263613E0A1E000BBB2F1 /* Build configuration list for PBXProject "Replicapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE7265813E0A1E000BBB2F1 /* Debug */,
+				BEE7265913E0A1E000BBB2F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEE7265A13E0A1E000BBB2F1 /* Build configuration list for PBXNativeTarget "Replicapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEE7265B13E0A1E000BBB2F1 /* Debug */,
+				BEE7265C13E0A1E000BBB2F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BEE7263313E0A1E000BBB2F1 /* Project object */;
+}
