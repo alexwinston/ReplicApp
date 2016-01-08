@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            padding: 0;
+            color: #252e37;
+            font: normal 13px/20px "Helvetica Neue";
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+        }
+
+        .container {
+            margin: 0 auto;
+            width: 1100px;
+            border-width: 0 1px 0 1px;
+            border-style: solid;
+            /*border-color: rgba(0, 0, 0, 0.3);*/
+            border-color: black;
+        }
+        .row {
+            clear: both;
+            padding: 0 0 0 0;
+        }
+        .feature {
+            float: left;
+            width: 320px;
+            padding: 0 0 0 35px;
+            /*background-size: 75%;*/
+            background-repeat: no-repeat;
+            background-position: top right;
+        }
+        .feature .feature-header {
+            font: bold 22px "Helvetica Neue";
+        }
+        .feature .feature-description {
+            padding: 10px 0 0 0;
+        }
+
+        .header-container {
+            background-image: url("images/background-pattern.png");
+        }
+        .header {
+            height:630px;
+            border-width: 0 1px 0 1px;
+            border-style: solid;
+            border-color: rgba(255, 255, 255, 0.3);
+            background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(101,115,126) 100%);
+            background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(101,115,126) 100%);
+            -moz-box-shadow: 0 0 5px 0px rgba(0, 0, 0, .4);
+            -webkit-box-shadow: 0 0 5px 0px rgba(0, 0, 0, .4);
+        }
+        .header-left {
+            /*border: 1px solid green;*/
+            float: left;
+        }
+        .header-left .header-icon {
+             width: 260px;
+             height: 250px;
+             background-image: url("images/header-icon.png");
+             background-repeat: no-repeat;
+             background-position: bottom right;
+        }
+        .header-left .header-logo {
+            width: 300px;
+            height: 75px;
+            background-image: url("images/header-logo.png");
+            background-repeat: no-repeat;
+            background-position: bottom right;
+        }
+        .header-left .header-description {
+            padding: 10px 0 0 42px;
+            width: 285px;
+        }
+        .header-left .header-purchase {
+            padding: 10px 0 0 42px;
+            width: 250px;
+            /*height: 50px;*/
+            /*background-image: url("images/header-purchase.png");*/
+            /*background-repeat: no-repeat;*/
+            /*background-position: bottom right;*/
+            text-align: center;
+        }
+        .header-left .header-slider {
+            width: 1010px;
+            height: 125px;
+            background-image: url("images/header-slider.png");
+            background-repeat: no-repeat;
+            background-position: bottom right;
+        }
+        .header-slider .header-video {
+            float: left;
+            padding: 90px 0 0 315px;
+        }
+        .slide1 {
+            opacity: 0.0;
+            float: left;
+            position: relative;
+            z-index: 3;
+            margin: 91px 0 0 8px;
+            padding: 7px 0 0 75px;
+            width: 169px; /* 244 - 75 */
+            height: 32px;
+            background-image: url("images/header-slider1.png");
+            background-repeat: no-repeat;
+            background-position: top left;
+        }
+        .slide1-label {
+            position: absolute;
+            z-index: 4;
+            margin: -27px 0 0 450px;
+        }
+        .slide2 {
+            opacity: 0.0;
+            float: left;
+            position: relative;
+            z-index: 2;
+            margin: 91px 0 0 -26px;
+            padding: 7px 0 0 90px;
+            width: 154px; /* 244 - 90 */
+            height: 32px;
+            background-image: url("images/header-slider1.png");
+            background-repeat: no-repeat;
+            background-position: top left;
+        }
+        .slide2-label {
+            position: absolute;
+            z-index: 4;
+            margin: -27px 0 0 670px;
+        }
+        .slide3 {
+            opacity: 0.0;
+            float: left;
+            position: relative;
+            z-index: 1;
+            margin: 91px 0 0 -47px;
+            padding: 7px 0 0 105px;
+            width: 133px; /* 238 - 105 */
+            height: 32px;
+            background-image: url("images/header-slider1.png");
+            background-repeat: no-repeat;
+            background-position: top left;
+        }
+        .slide3-label {
+            position: absolute;
+            z-index: 4;
+            margin: -27px 0 0 875px;
+        }
+        .header-right {
+            /*border: 1px solid red;*/
+        }
+        .header-right .header-screen {
+            width: 1050px;
+            height: 520px;
+            background-image: url("images/header-screen.png");
+            /*background-size: 75%;*/
+            background-repeat: no-repeat;
+            background-position: bottom right;
+
+        }
+        .header-screen .slider1-popup {
+            position: absolute;
+            opacity: 0.0;
+            width: 392px;
+            left: 302px;
+            height: 407px;
+            background-image: url("images/slider1-popup.png");
+            background-repeat: no-repeat;
+            background-position: bottom right;
+        }
+        .header-screen .slider2-popup {
+            position: absolute;
+            opacity: 0.0;
+            width: 705px;
+            left: 300px;
+            height: 470px;
+            background-image: url("images/slider2-popup.png");
+            background-repeat: no-repeat;
+            background-position: bottom right;
+        }
+        .header-screen .slider3-popup {
+            position: absolute;
+            opacity: 0.0;
+            width: 730px;
+            left: 300px;
+            height: 380px;
+            background-image: url("images/slider3-popup.png");
+            background-repeat: no-repeat;
+            background-position: bottom right;
+        }
+
+        .content-container {
+            background-image: url("images/background-pattern.png");
+        }
+        .content {
+            padding-top: 50px;
+            height: 800px;
+            border-width: 0 1px 0 1px;
+            border-style: solid;
+            border-color: rgba(255, 255, 255, 0.3);
+            background-color: #ebedee;
+            -moz-box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+            -webkit-box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+        }
+        .content .feature {
+            height: 400px;
+            background-image: url("images/feature-background.png");
+        }
+        .content .feature-header {
+            padding-top: 30px;
+        }
+        .feature-snapshot {
+            margin: 4px 0 0 4px;
+            height: 184px;
+            width: 312px;
+        }
+        .feature1 {
+            background-image: url("images/feature1-snapshot.png");
+        }
+        .feature2 {
+            background-image: url("images/feature2-snapshot.png");
+        }
+        .feature3 {
+            background-image: url("images/feature3-snapshot.png");
+        }
+        .feature4 {
+            background-image: url("images/feature4-snapshot.png");
+        }
+        .feature5 {
+            background-image: url("images/feature5-snapshot.png");
+        }
+        .footer-container .container {
+            border-bottom-width: 1px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .footer-container {
+            padding: 0 0 50px 0;
+            background-image: url("images/background-pattern.png");
+        }
+        .footer {
+            padding: 30px 0 0 0;
+            height: 300px;
+            border-width: 0 1px 1px 1px;
+            border-style: solid;
+            border-color: rgba(255, 255, 255, 0.3);
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-image: -webkit-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(227,230,232) 100%);
+            background-image: -moz-linear-gradient(bottom, rgb(255,255,255) 0%, rgb(227,230,232) 100%);
+            -moz-box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+            -webkit-box-shadow: 0 5px 5px 0px rgba(0, 0, 0, .4);
+        }
+        .footer .feature {
+            height: 55px;
+            background-position: top center;
+        }
+        .footer .feature-header {
+            padding-top: 75px;
+        }
+        .footer .feature.help {
+            background-image: url("images/footer-help.png");
+        }
+        .footer .feature.share {
+            background-image: url("images/footer-share.png");
+        }
+        .footer .feature.about {
+            background-image: url("images/footer-about.png");
+        }
+        a.btn {
+            text-decoration: none;
+            box-sizing: border-box;
+
+            padding: 10px;
+            margin-bottom: 5px;
+
+            display: inline-block;
+            color: rgba(50, 50, 50, 0.7);
+            background-color: rgba(255, 255, 255, 0.08);
+            border-color: rgba(150, 150, 150, 0.5);
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 0.3rem;
+            /*transition: color 0.2s, background-color 0.2s, border-color 0.2s;*/
+        }
+    </style>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        function animateSlider() {
+            $(".slider1-popup").animate({ opacity: 1.0 }, 2000, function() {});
+            $(".slide1").animate({ opacity: 1.0 }, 2000, function() {
+                $(".slider1-popup").animate({ opacity: 0.0 }, 1000, function() {});
+
+                $(".slider2-popup").animate({ opacity: 1.0 }, 2000, function() {});
+                $(".slide2").animate({ opacity: 1.0 }, 2000, function() {
+//                    $(".slider2-popup").animate({ opacity: 0.0 }, 1000, function() {});
+
+                    $(".slider3-popup").animate({ opacity: 1.0 }, 2000, function() {});
+                    $(".slide3").animate({ opacity: 1.0 }, 2000, function() {
+                        $(".slider3-popup").animate({ opacity: 0.0 }, 2000, function() {
+                            // Fade everything out
+                            $(".slide3").animate({ opacity: 0.0 }, 500, function() {
+                                $(".slide2").animate({ opacity: 0.0 }, 500, function() {
+                                    $(".slide1").animate({ opacity: 0.0 }, 500, function() {});
+                                });
+                            });
+
+                            $(".slider2-popup").animate({ opacity: 0.0 }, 2000, function() {});
+                        });
+                    });
+                });
+            });
+        }
+
+        $(document).ready(function() {
+            jQuery.fx.interval = 50;
+
+            // Pause 1 second before starting the initial animation
+            setTimeout("animateSlider()", 1000);
+            // Loop the animation every 14-15 seconds
+            setInterval("animateSlider()", 14000);
+        });
+    </script>
+</head>
+<body>
+<div class="header-container">
+    <div class="container">
+        <div class="header">
+            <div class="header-left">
+                <div class="header-icon">
+                    <!--<img alt="" src="images/header-icon.png">-->
+                </div>
+                <div class="header-logo">
+                    <!--ReplicApp-->
+                </div>
+                <div class="header-description">
+                    An exciting new way to replicate a portion of any app for unobstructed viewing or monitoring.
+                </div>
+                <div class="header-purchase">
+                    <!--Purchase-->
+                    <a href="http://alexwinston.github.com/replicapp" class="btn">View on GitHub</a>
+                    <a href="http://alexwinston.github.com/replicapp/releases" class="btn">Download ReplicApp</a>
+                </div>
+                <div class="header-slider">
+                    <div class="header-video">
+                        <img alt="" src="images/header-video.png">
+                    </div>
+                    <div class="slide1"></div>
+                    <div class="slide2"></div>
+                    <div class="slide3"></div>
+                </div>
+                <div>
+                    <div class="slide1-label">Select</div>
+                    <div class="slide2-label">Replicate</div>
+                    <div class="slide3-label">Configure</div>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-screen">
+                    <div class="slider1-popup"></div>
+                    <div class="slider2-popup"></div>
+                    <div class="slider3-popup"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="content-container">
+    <div class="container">
+        <div class="content">
+            <div class="row">
+                <div class="feature">
+                    <div class="feature-snapshot feature1"></div>
+                    <div class="feature-header">Always visible</div>
+                    <div class="feature-description">
+                        ReplicApp windows by default are modal and sit atop your desktop unobstructed for easy access and viewing.
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-snapshot feature2"></div>
+                    <div class="feature-header">Resizable</div>
+                    <div class="feature-description">
+                        ReplicApp windows are resizable so that you can scale that movie or video down you are watching so it is less obvious.
+                        Alternatively keep tabs on portions of windows without requiring the clutter at full scale.
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-snapshot feature3"></div>
+                    <div class="feature-header">Notifications</div>
+                    <div class="feature-description">
+                        ReplicApp can alert you when a window hasn't changed for a specified duration -- allowing you to be alerted when that build is complete or output has stopped.
+                        Even better, you can be alerted when the window image changes by a certain percentage.
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="feature">
+                    <div class="feature-snapshot feature4"></div>
+                    <div class="feature-header">Ease of use</div>
+                    <div class="feature-description">
+                        Easy activation through the menubar or keyboard shortcut.  It mimics the screenshot shortcut by default in order to make it easier to remember.
+                    </div>
+                </div>
+                <div class="feature">
+                    <div class="feature-snapshot feature5"></div>
+                    <div class="feature-header">Configuration</div>
+                    <div class="feature-description">ReplicApp offers several configuration options.  Refresh speed of the replicated content, notifications when content hasn't changed for a specified duration or changes a particular percent, pinnable and resizeable.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer-container">
+    <div class="container">
+        <div class="footer">
+            <div class="row">
+                <div class="feature help">
+                    <div class="feature-header">Do you need help?</div>
+                    <div class="feature-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                </div>
+                <div class="feature share">
+                    <div class="feature-header">Recommend ReplicApp</div>
+                    <div class="feature-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                </div>
+                <div class="feature about">
+                    <div class="feature-header">About &amp; Legal Notice</div>
+                    <div class="feature-description">Lorem ipsum dolor sit amet, consetetur sadipscing elitr,  sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
