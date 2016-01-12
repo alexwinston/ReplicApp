@@ -106,8 +106,12 @@
 	}
 	[c release];
     
-    // Set the Growl delegate to handle clicks
-//    [GrowlApplicationBridge setGrowlDelegate:self];
+    // Set the notification center delegate
+    [[NSUserNotificationCenter defaultUserNotificationCenter] setDelegate:self];
+}
+
+- (BOOL)userNotificationCenter:(NSUserNotificationCenter *)center shouldPresentNotification:(NSUserNotification *)notification{
+    return YES;
 }
 
 - (void)applicationDidResignActive:(NSNotification *)notification

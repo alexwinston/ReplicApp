@@ -6,7 +6,6 @@
 //  Copyright 2011 __MyCompanyName__. All rights reserved.
 //
 
-//#include <Growl/Growl.h>
 #include <Quartz/Quartz.h>
 
 #import "ReplicappWindowController.h"
@@ -379,14 +378,16 @@ BOOL CGImageDataPixelIsBlack(unsigned char* imageData, NSInteger imageWidth, NSI
                 
                 NSTimeInterval currentInterval = [[NSDate date] timeIntervalSinceDate:previousHasChangedDate];
                 if (currentInterval > kRCNotificationMinimumSecondsInterval) {
-//                    [GrowlApplicationBridge notifyWithTitle:[self replicappNotificationTitle]
-//                                                description:[kRCHasChangedDescriptions[[hasChangedNotificationSlider intValue]] stringByReplacingOccurrencesOfString:@"Changes" withString:@"Changed"]
-//                                           notificationName:@"RCChangeNotifications"
-//                                                   iconData:[self replicappNotificationIconData]
-//                                                   priority:0
-//                                                   isSticky:NO
-//                                               clickContext:nil];
-                    NSLog(@"TODO Percent change notification");
+                    NSUserNotification *notification = [[NSUserNotification alloc] init];
+                    notification.title = [self replicappNotificationTitle];
+                    notification.informativeText = [kRCHasChangedDescriptions[[hasChangedNotificationSlider intValue]] stringByReplacingOccurrencesOfString:@"Changes" withString:@"Changed"];
+                    notification.soundName = NSUserNotificationDefaultSoundName;
+                    [notification setValue:[[NSImage alloc] initWithData:[self replicappNotificationIconData]]
+                                    forKey:@"_identityImage"];
+                    [notification setValue:[NSNumber numberWithBool:NO] forKey:@"_identityImageHasBorder"];
+                    
+                    [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
+
                     [previousHasChangedDate release];
                     previousHasChangedDate = [[NSDate date] retain];
                 }
@@ -400,14 +401,16 @@ BOOL CGImageDataPixelIsBlack(unsigned char* imageData, NSInteger imageWidth, NSI
                 } else {
                     NSTimeInterval currentInterval = [[NSDate date] timeIntervalSinceDate:previousNoChangesDate];
                     if (currentInterval > kRCNoChangesSeconds[[noChangesNotificationSlider intValue]]) {
-//                        [GrowlApplicationBridge notifyWithTitle:[self replicappNotificationTitle]
-//                                                    description:kRCNoChangesDescriptions[[noChangesNotificationSlider intValue]]
-//                                               notificationName:@"RCChangeNotifications"
-//                                                       iconData:[self replicappNotificationIconData]
-//                                                       priority:0
-//                                                       isSticky:NO
-//                                                   clickContext:nil];
-                        NSLog(@"TODO No change notification");
+                        NSUserNotification *notification = [[NSUserNotification alloc] init];
+                        notification.title = [self replicappNotificationTitle];
+                        notification.informativeText = kRCNoChangesDescriptions[[noChangesNotificationSlider intValue]];
+                        notification.soundName = NSUserNotificationDefaultSoundName;
+                        [notification setValue:[[NSImage alloc] initWithData:[self replicappNotificationIconData]]
+                                        forKey:@"_identityImage"];
+                        [notification setValue:[NSNumber numberWithBool:NO] forKey:@"_identityImageHasBorder"];
+                        
+                        [[NSUserNotificationCenter defaultUserNotificationCenter] deliverNotification:notification];
+
                         [previousNoChangesDate release];
                         previousNoChangesDate = [[NSDate date] retain];
                     }

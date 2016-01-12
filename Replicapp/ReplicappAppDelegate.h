@@ -7,13 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
-//#import <Growl/Growl.h>
 
 #import "RCCursorView.h"
 #import "RCHighlightWindow.h"
 #import "RCHighlightView.h"
 
-@interface ReplicappAppDelegate : NSObject <NSApplicationDelegate> {
+@interface ReplicappAppDelegate : NSObject <NSApplicationDelegate, NSUserNotificationCenterDelegate> {
     IBOutlet RCHighlightWindow *selectionHighlightWindow;
     IBOutlet RCHighlightView *selectionHighlightView;
     
