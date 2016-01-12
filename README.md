@@ -5,7 +5,6 @@ Replicated app content can be configured for various refresh rates and is resiza
 
 (TODO) Supports the ability to click, drag, scroll behind your floating content.   
 (TODO) Replicate content from multiple monitor configurations.  
-(FIX) Receive notifications when replicated app content doesn't change for a particular duration or when it changes more than a specified threshold.  
 
 ## Getting Started
 
